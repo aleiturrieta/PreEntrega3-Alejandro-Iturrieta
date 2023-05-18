@@ -817,6 +817,27 @@ footer {
     padding-top: 50px;
 }
 
+/* ----------------------------------------WHATSAPP------------------------------------------------*/
+
+.whatsapp {
+    bottom: 2rem;
+    cursor: pointer;
+    margin: 1rem;
+    position: fixed;
+    right: 2rem;
+    transition: all .3s ease-in-out;
+    z-index: 998;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+    
+    img {
+        height: 50px;
+        width: 50px
+    }
+}
+
 /* ----------------------------------------MEDIAS QUERIS------------------------------------------------*/
 
 @media (max-width: 991px) and (min-width: 220px) {
@@ -856,7 +877,7 @@ footer {
 
 
     .portada-textos-pag h1 {
-        padding-top: 150px;
+        padding-top: 80px;
         font-size: 30px;
     }
 
@@ -880,6 +901,11 @@ footer {
             }
     }
 
+    .grilla-nosotros {
+        grid-template-columns: 1fr;
+        grid-row: auto;       
+    }
+
     .texto-nosotros h2 {
         margin-bottom: 20px;
     }
@@ -891,6 +917,8 @@ footer {
     .imagen-nosotros {
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 150px;
     }
 
     .card-persona {
@@ -904,6 +932,13 @@ footer {
         }
     }
 
+
+    .grilla-contacto {
+        
+        grid-template-columns:1fr;
+        grid-row: auto;
+        
+    }
     
     .footer-menu {
         text-align: center;
